@@ -1,10 +1,10 @@
-x = 10
-y = 5
+number1 = 10
+number2 = 5
 
 # perform addition, difference, product
-addition_result = x + y
-difference_result = x - y
-product_result = x * y
+addition_result = number1 + number2
+difference_result = number1 - number2
+product_result = number1 * number2
 
 # Print the results
 print(addition_result)
