@@ -1,7 +1,7 @@
 # Prompt for a Single Task
-task = input("Enter your task: ")
-priority = input("Priority(high/medium/low): ")
-time_bound = input("Is it time_bound? (yes/no): ")
+Task = input("Enter your task: ")
+Priority = input("Priority(high/medium/low): ")
+Time Bound = input("Is it time_bound? (yes/no): ")
 reminder = ""
 
 # Process the Task Based on Priority and Time Sensitivity
