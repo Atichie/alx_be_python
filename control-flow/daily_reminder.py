@@ -7,16 +7,16 @@ reminder = ""
 # Process the Task Based on Priority and Time Sensitivity
 match priority: 
     case "high":
-        reminder = f"The task '{task}' is of high priority."
+        reminder = f"The task '{task}' is of high priority" 
     case "medium":
-        reminder = f"The task '{task}' is of medium priority."
+        reminder = f"The task '{task}' is of medium priority" 
     case "low":
         reminder = f"The task '{task}' is of low priority."
     case _:
         reminder = f"The task '{task}' has unspecified priority."
 if time_bound == "yes":
-    reminder += " It requires immediate attention today!"
-    print(reminder)
+    reminder += " that requires immediate attention today!"
+    print(f"Reminder: {reminder}")
 else:
     reminder += " Consider completing it when you have free time." 
-    print(reminder)                                           
+    print(f"Reminder: {reminder}")                            
