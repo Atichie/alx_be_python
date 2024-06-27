@@ -1,7 +1,7 @@
 # Prompt for User Input
 num1 = int(input("Enter the first number: "))
 num2 = int(input("Enter the second number: "))
-operation = input("Choose the operator (+, -, *, /): ").strip()
+operation = input("Choose the operation (+, -, *, /): ").strip()
 
 #Perform the Calculation Using Match Case
 match operation:
