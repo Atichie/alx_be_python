@@ -24,10 +24,10 @@ if name == "_main_":
     account.deposit(50)
     account.dispay_balance()
 
-    account.withdraw(150)
+    account.withdraw(20)
     account.dispay_balance()
 
-    success = account.withdraw(200)
+    success = account.withdraw(150)
     print(f"Withdrawal successful: {success}")
 
     account.display_balance()
