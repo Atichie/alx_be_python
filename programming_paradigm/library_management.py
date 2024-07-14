@@ -1,5 +1,7 @@
 class Book:
-    def _init_(self):
+    def _init_(self, title, author):
+        self.title = title
+        self.author = author
         
     def check_out(self):
         if not self._is_checked_out:
