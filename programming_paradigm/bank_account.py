@@ -1,8 +1,6 @@
 class BankAccount:
     def _init_(self, initial_balance = 0):
-        """
-        Initialize the BankAccount with an ptional initial balance
-        """
+        self.account_balance = initial_balance
 
     def deposit(self,amount):
         """
