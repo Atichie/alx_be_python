@@ -24,7 +24,7 @@ if name == "_main_":
     account.deposit(50)
     account.dispay_balance()
 
-    account.withdraw(20)
+    account.withdraw(50)
     account.dispay_balance()
 
     success = account.withdraw(200)
