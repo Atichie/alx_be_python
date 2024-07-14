@@ -3,11 +3,13 @@ def safe_divide(numerator, denominator):
         num = float(numerator)
         denom = float(denominator)
 
-        result = num / denom
-        return f"The result of {num} divided by {denom} is {result:1f}"
+        if denom == 0:
+            return "Error: Cannot divide by zero."
 
-    except ZeroDivisionError:
-        return "Error: Cannot divide by zero."
+        result = num / denom
+        formatted_result = format(result, ".1f")
+        return f"The result of the division is {formatted_result}"
+
 
     except ValueError:
         return "Error: Please enter numeric values only."
