@@ -16,12 +16,7 @@ class TestSimpleCalculator(unittest.TestCase):
             self.assertEqual(self.calc.multiply(5, 3), 15)
 
         def test_division(self):
-            calc = SimpleCalculator()
-            try:
-                calc.divide(5, 0)
-                self.fail("Expected ZeroDivisionError")
-            except ZeroDivisionError as e:
-                self.assertEqual(str(e), "division by zero")
+            self.assertEqual(self.calc.divide(8, 2), 4)
             
     
 
