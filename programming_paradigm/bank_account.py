@@ -18,7 +18,7 @@ class BankAccount:
 
 name = "main"
 if name == "_main_":
-    account = BankAccount(250)
+    account = BankAccount(100)
     account.dispay_balance()
 
     account.deposit(50)
