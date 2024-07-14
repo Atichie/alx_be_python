@@ -1,9 +1,6 @@
 class Book:
-    def _init_(self,title,author):
-        self.title = title
-        self.author = author
-        self._is_checked_out = False
-
+    def _init_(self):
+        
     def check_out(self):
         if not self._is_checked_out:
             self._is_checked_out = True
