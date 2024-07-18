@@ -23,7 +23,7 @@ class PrintBook(Book):
         return f"{super().} Page count: {page_count}"
 
 
-class Library(Book, EBook, PrintBook):
+class Library:
     def __init__(self):
         self.books = []
 
