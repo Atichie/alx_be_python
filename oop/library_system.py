@@ -34,6 +34,23 @@ class Library:
         for book in self.books:
             print(book)
         
+name = '_main_'
+if name == "_main_":
+    try:
+        my_library = Library()
+
+        book1 = Book("Pride and Prejudice", "Jane Austen")
+        ebook1 = EBook("Snow Crash", "Neal Stephenson", 500)
+        printbook1 = PrintBook("The Catcher in the Rye", "J.D. Salinger", 234)
+
+        my_library.add_book(book1)
+        my_library.add_book(ebook1)
+        my_library.add_book(printbook1)
+
+        my_library.list_books()
+    except Exception as e:
+        print(f"An expected error occurred: {e}", file=sys.stderr)
+
 
 
 
