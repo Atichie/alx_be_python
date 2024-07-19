@@ -28,11 +28,13 @@ class Library:
         self.books = []
 
     def add_book(self, book):
+        if not isinstance(book, Book):
+            print("Error: Can only add instances of Book, EBook, or PrintBook to the library.", file=sys.stderr)
         self.books.append(book)
 
     def list_books(self):
         if not self.books:
-            print("Error:No Books available in the library")
+            print("Error:No Books available in the library.", file=sys.stderr)
             return
         for book in self.books:
             print(book)
