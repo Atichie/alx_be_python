@@ -31,7 +31,7 @@ class Library:
         if isinstance(book, Book):
             self.books.append(book)
         else:
-            raise ValueError("Only Instances of Book, EBook, or PrintBook can be added")
+            raise ValueError("Only Instances of Book, EBook, or PrintBook can be added.", file=sys.stderr)
 
     def list_books(self):
         if not self.books:
